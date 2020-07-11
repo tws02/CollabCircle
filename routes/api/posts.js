@@ -167,7 +167,10 @@ router.put(
     }
 
     try {
-      const user = await User.findById(req.user.id).select("-password");
+      const user = await User.findById(req.user.id).select(
+        "-password",
+        "-address"
+      );
       const post = await Post.findById(req.params.id);
 
       const newComment = {

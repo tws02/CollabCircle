@@ -58,6 +58,7 @@ router.post(
         name,
         email,
         password,
+        avatar,
       });
 
       // Encrypt using Bcrypt

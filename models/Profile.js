@@ -14,6 +14,9 @@ const ProfileSchema = new mongoose.Schema({
   location: {
     type: String,
   },
+  age: {
+    type: Number,
+  },
   status: {
     type: String,
     required: true,
@@ -27,6 +30,9 @@ const ProfileSchema = new mongoose.Schema({
   },
   githubusername: {
     type: String,
+  },
+  interest: {
+    type: [String],
   },
   experience: [
     {

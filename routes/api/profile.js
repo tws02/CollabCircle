@@ -54,6 +54,7 @@ router.post(
       bio,
       skills,
       status,
+      age,
       githubusername,
       youtube,
       twitter,
@@ -67,6 +68,7 @@ router.post(
     if (company) profileFields.company = company;
     if (location) profileFields.location = location;
     if (website) profileFields.website = website;
+    if (age) profileFields.age = age;
     if (bio) profileFields.bio = bio;
     if (status) profileFields.status = status;
     if (githubusername) profileFields.githubusername = githubusername;
